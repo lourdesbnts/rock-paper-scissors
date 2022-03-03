@@ -1,0 +1,45 @@
+/* font-family: 'Bebas Neue', cursive; */
+
+
+
+
+* {
+  border: 2px blue solid;
+}
+
+html, body, section {
+  height: 100%;
+}
+
+body {
+font-size: 1.25rem;
+line-height: 150%;
+text-align: center;
+overflow-y: hidden;
+}
+
+main {
+  background-color: beige;
+  width: 50%;
+}
+
+.container {
+  display: flex;
+}
+
+/* .right-side, */
+.left-side {
+  background-color: #ff9e2c;
+  width: 25%;
+}
+
+.right-side {
+  background-color: #ff9e2c;
+  width: 25%;
+}
+
+.game-levels {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
