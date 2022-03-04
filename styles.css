@@ -3,43 +3,89 @@
 
 
 
-* {
+/* * {
   border: 2px blue solid;
+} */
+
+h1 {
+  font-size: 50px;
 }
 
 html, body, section {
+  font-family: 'Bebas Neue', cursive;
   height: 100%;
 }
 
 body {
 font-size: 1.25rem;
-line-height: 150%;
+height: 100vh;
 text-align: center;
 overflow-y: hidden;
+margin: 0;
 }
 
 main {
-  background-color: beige;
+  background-color: #F6CACA;
   width: 50%;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+}
+
+p {
+  display: flex;
+  margin: 5px;
 }
 
 .container {
   display: flex;
 }
 
-/* .right-side, */
-.left-side {
-  background-color: #ff9e2c;
-  width: 25%;
-}
-
+.left-side,
 .right-side {
-  background-color: #ff9e2c;
+  background-color: #44CFCB;
   width: 25%;
 }
 
-.game-levels {
+.box-1,
+.box-2 {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 200px;
+  width: 200px;
+  background-color: rgba(225, 225, 225, .9);
+  opacity: 1.0;
+}
+
+.classic-game {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
+
+}
+
+.difficult-rules {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.human-icon,
+.computer-icon {
+  display: flex;
+  justify-content: center;
+}
+
+.score-keeper {
+  display: flex;
+  justify-content: center;
+}
+
+.human,
+.computer {
+  margin-top: 60px;
 }
