@@ -120,11 +120,11 @@ class Game {
 
 
 
-var game1 = new Game()
-game1.classicGame(human, computer);
-
-var game2 = new Game()
-game2.difficultGame(human, computer);
+// var game1 = new Game()
+// game1.classicGame(human, computer);
+//
+// var game2 = new Game()
+// game2.difficultGame(human, computer);
 
 
 
@@ -138,7 +138,3 @@ console.log(computer.chooseDifficultWeapon())
 // console.log(computer.chooseWeapon())
 
 // make fighters dynamic for computer and the human
-
-//computer chooses random weapon (method)
-//how to create a method that chooses a random weapon for computer
-// connecting the game class into the main.js file
