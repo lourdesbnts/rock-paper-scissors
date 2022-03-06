@@ -18,12 +18,19 @@ class Player {
     return this.fighter
     // console.log(this.classicFighters[randomIndex])
   }
+  chooseDifficultWeapon() {
+    var randomIndex = Math.floor(Math.random() * this.difficultFighters.length);
+    this.fighter = this.difficultFighters[randomIndex]
+    return this.fighter
+    console.log(this.difficultFighters[randomIndex])
+  }
 }
+
 
 // resetGame() {
   //should clear game just played
   //should show new icons for player to select new fighter
-}
+// }
 
 //method for player to chose a weapon
 //method that adds 1 to the score

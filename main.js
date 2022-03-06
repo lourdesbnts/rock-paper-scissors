@@ -1,7 +1,7 @@
 
 // Query or ID Selectors
-var classicGameChoice = document.getElementById('classicGame');
-var difficultGameChoice = document.getElementById('difficultGame');
+// var classicGameChoice = document.getElementById('classicGame');
+// var difficultGameChoice = document.getElementById('difficultGame');
 // var Game = require('./game.js')
 // Event Listeners
 // classicGameChoice.addEventListener('click', startClassic);
