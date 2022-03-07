@@ -18,7 +18,7 @@
     <main>
     <header>
       <h1>Rock, Paper, Scissors</h1>
-        <h2>Choose your game!</h2>
+        <h2 class="game-or-fighter" id="gameOrFighter">Choose your game!</h2>
     </header>
     <section class="box-1" id="classicGameVersion">
       <h3>💫Classic💫</h3>
@@ -37,7 +37,7 @@
         <p>scissors > paper & lizard</p>
         <p>lizard > paper & alien</p>
         <p>alien > scissors & rock</p>
-        <input type="button" id="classicGameSelected" value="Start Difficult Game">
+        <input type="button" id="difficultGameSelected" value="Start Difficult Game">
       </section>
     </section>
     <section class="classic-fighters-display hidden" id="classicFightersDisplay">
@@ -53,7 +53,7 @@
         <img src="assets/happy-scissors.png" alt="scissors icon" class="fighter-icons">
         <input type="checkbox" id="scissorsFighter" class="scissors-fighter hidden" value="scissors">
       </label>
-    <section class="difficult-fighters-display hidden" id="DifficultFightersDisplay">
+    <section class="difficult-fighters-display hidden" id="difficultFightersDisplay">
         <label class="alien-fighter" for="alienFighter">
           <img src="assets/happy-alien.png" alt="alien icon" class="fighter-icons">
           <input type="checkbox" id="alienFighter" class="alien-fighter hidden" value="alien">

@@ -8,7 +8,7 @@ class Game {
     this.computer = new Player({
       name: 'Computer',
       icon: 'here will be the token',
-      fighter: null
+      fighter: ''
     })
     this.whoWon = '';
     this.computerChoiceClassic = this.computer.chooseWeapon();
