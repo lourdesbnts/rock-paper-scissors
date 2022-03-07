@@ -3,9 +3,9 @@ class Player {
     this.name = player.name;
     this.token = player.icon;
     this.wins = 0;
-    this.fighter = '';
     this.classicFighters = ['rock', 'paper', 'scissors'];
     this.difficultFighters = ['rock', 'paper', 'scissors', 'alien', 'lizard'];
+    this.fighter = player.fighter;
   }
 
   scoreKeeper() {
@@ -33,9 +33,6 @@ class Player {
 // }
 
 
-//also says 'human wins'
-//after win the game resets
 
-
-//also says 'computer wins'
 //after win the game resets
+//need timer for reset
