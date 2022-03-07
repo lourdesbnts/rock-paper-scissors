@@ -58,6 +58,7 @@ p {
   width: 200px;
   background-color: rgba(225, 225, 225, .9);
   opacity: 1.0;
+  margin-top: 40px;
 }
 
 .classic-game {
@@ -88,4 +89,13 @@ p {
 .human,
 .computer {
   margin-top: 60px;
+}
+
+.fighter-icons {
+  width: 100px;
+  height: 100px;
+}
+
+.hidden {
+  display: none;
 }

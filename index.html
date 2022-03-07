@@ -26,6 +26,7 @@
         <p>rock > scissors</p>
         <p>paper > rock</p>
         <p>scissors > paper</p>
+        <input type="button" id="classicGameSelected" value="Start Game">
       </section>
     </section>
     <section class="box-2" id="difficultGame">
@@ -36,12 +37,33 @@
         <p>scissors > paper & lizard</p>
         <p>lizard > paper & alien</p>
         <p>alien > scissors & rock</p>
+        <input type="button" id="classicGameSelected" value="Start Game">
       </section>
     </section>
-    <!-- <section> -->
-      <!-- <img src="assets/lizard.png"> -->
-      <!-- need to add images of icons here -->
-    <!-- </section> -->
+    <section class="classic-fighters-display hidden" id="classicFightersDisplay">
+      <label class="rock-fighter" for="rockFighter">
+        <img src="assets/happy-rocks.png" alt="rock icon" class="fighter-icons">
+        <input type="checkbox" id="rockFighter" class="rock-fighter hidden" value="rock">
+      </label>
+      <label class"paper-fighter" for="paperFighter">
+        <img src="assets/happy-paper.png" alt="paper icon" class="fighter-icons">
+        <input type="checkbox" id="paperFighter" class="paper-fighter hidden" value="paper">
+      </label>
+      <label class="scissors-fighter" for="scissorsFighter">
+        <img src="assets/happy-scissors.png" alt="scissors icon" class="fighter-icons">
+        <input type="checkbox" id="scissorsFighter" class="scissors-fighter hidden" value="scissors">
+      </label>
+    <section class="difficult-fighters-display hidden" id="DifficultFightersDisplay">
+        <label class="alien-fighter" for="alienFighter">
+          <img src="assets/happy-alien.png" alt="alien icon" class="fighter-icons">
+          <input type="checkbox" id="alienFighter" class="alien-fighter hidden" value="alien">
+        </label>
+        <label class="lizard-fighter" for="lizardFighter">
+          <img src="assets/lizard.png" alt="lizard icon" class="fighter-icons">
+          <input type="checkbox" id="lizardFighter" class="lizard-fighter hidden" value="lizard">
+        </label>
+    </section>
+    </section>
     </main>
     <div class="right-side">
     <article class="computer">

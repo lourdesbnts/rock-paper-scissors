@@ -3,7 +3,7 @@ class Player {
     this.name = player.name;
     this.token = player.icon;
     this.wins = 0;
-    this.fighter = 'paper';
+    this.fighter = '';
     this.classicFighters = ['rock', 'paper', 'scissors'];
     this.difficultFighters = ['rock', 'paper', 'scissors', 'alien', 'lizard'];
   }
@@ -32,12 +32,10 @@ class Player {
   //should show new icons for player to select new fighter
 // }
 
-//method for player to chose a weapon
 
 //also says 'human wins'
 //after win the game resets
 
-//method for computers to chose a weapon
 
 //also says 'computer wins'
 //after win the game resets

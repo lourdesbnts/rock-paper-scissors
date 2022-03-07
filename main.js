@@ -1,13 +1,30 @@
-
 // Query or ID Selectors
-// var classicGameChoice = document.getElementById('classicGame');
-// var difficultGameChoice = document.getElementById('difficultGame');
-// Event Listeners
-// classicGameChoice.addEventListener('click', startClassic);
-// difficultGameChoice.addEventListener('click', startDifficult);
-//
-//
+var classicGameChoice = document.getElementById('classicGameChoice');
+var difficultGameChoice = document.getElementById('difficultGameVersion');
+
+
+
+
+
 var game = new Game();
-// debugger
-// game1.classicGame('paper', 'rock')
-// console.log(game1)
+
+// console.log(game.classicGame())
+
+
+// Event Listeners
+// classicGameChoice.addEventListener('click', startClassicGame);
+// difficultGameChoice.addEventListener('click', startDifficultGame)
+
+
+
+
+
+
+
+
+
+
+//Selectors needed
+//user clicks classic game
+//user difficult game
+//user selects fighter
