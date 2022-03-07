@@ -15,40 +15,45 @@ class Game {
     this.computerChoiceDifficult = this.computer.chooseDifficultWeapon();
   }
 
+    assignHumanFighter(fighter) {
+      this.human.fighter = fighter
+    }
 
   classicGame() {
-    console.log(this.human.fighter)
-    if (this.human.fighter === this.computerChoiceClassic) {
-      this.whoWon = 'It\'s a draw'
+    // console.log(this.computerChoiceClassic)
+    this.computer.fighter = this.computer.chooseWeapon()
+    // console.log(this.computer.fighter)
+    if (this.human.fighter === this.computer.fighter) {
+      this.whoWon = 'It\'s a draw!'
       return this.whoWon;
     }
-    if (this.human.fighter === 'paper' && this.computerChoiceClassic === 'rock') {
+    if (this.human.fighter === 'paper' && this.computer.fighter === 'rock') {
       this.whoWon = `${this.human.name} won!`
       this.human.scoreKeeper();
       return this.whoWon;
     }
-    if (this.human.fighter === 'rock' && this.computerChoiceClassic === 'scissors') {
+    if (this.human.fighter === 'rock' && this.computer.fighter === 'scissors') {
       this.whoWon = `${this.human.name} won!`
       this.human.scoreKeeper();
       return this.whoWon;
     }
-    if (this.human.fighter === 'rock' && this.computerChoiceClassic === 'paper') {
+    if (this.human.fighter === 'rock' && this.computer.fighter === 'paper') {
       this.whoWon = `${this.computer.name} won!`
       this.computer.scoreKeeper();
       return this.whoWon;
     }
-    if (this.human.fighter === 'paper' && this.computerChoiceClassic === 'scissors') {
+    if (this.human.fighter === 'paper' && this.computer.fighter === 'scissors') {
       this.whoWon = `${this.computer.name} won!`
       this.computer.scoreKeeper();
       console.log(this.whoWon)
       return this.whoWon;
     }
-    if (this.human.fighter === 'scissor' && this.computerChoiceClassic === 'paper') {
+    if (this.human.fighter === 'scissor' && this.computer.fighter === 'paper') {
       this.whoWon = `${this.human.name} won!`
       this.human.scoreKeeper();
       return this.whoWon;
     }
-    if (this.human.fighter === 'scissors' && this.computerChoiceClassic === 'rock') {
+    if (this.human.fighter === 'scissors' && this.computer.fighter === 'rock') {
       this.whoWon = `${this.computer.name} won!`
       this.computer.scoreKeeper();
       return this.whoWon;

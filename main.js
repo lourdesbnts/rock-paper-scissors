@@ -7,21 +7,24 @@ var scissors = document.getElementById('scissorsFighter');
 var alien = document.getElementById('alienFighter');
 var lizard = document.getElementById('lizardFighter');
 var classicFightersDisplay = document.getElementById('classicFightersDisplay')
+var fightersInfo = document.getElementById('fightersInfo')
+var humanScore = document.getElementById('humanScore')
+var computerScore = document.getElementById('computerScore')
 
 
 
 var game = new Game();
 // game.difficultGame()
-console.log(game.difficultGame())
-console.log(game.computer.fighter)
-console.log(game.computer.wins)
-console.log(game.human.wins)
+// console.log(game.classicGame())
+// console.log(game.computer.fighter)
+// console.log(game.computer.wins)
+// console.log(game.human.wins)
 
 // Event Listeners go here:
 window.addEventListener('load', scores)
 classicGameChoice.addEventListener('click', startClassicGame);
 difficultGameChoice.addEventListener('click', startDifficultGame);
-
+classicFightersDisplay.addEventListener('click', startGame)
 
 //Functions go here:
 
@@ -33,22 +36,12 @@ function hide(element) {
   element.classList.add('hidden')
 }
 
-//**FIX**
-//when I click difficult game, nothing happens until i press classic, then all characters(figured it out gracias a Dios)
-//for diifcult game appear
-
-//I need the difficult button to be clicked and show the difficult characters(done!)
-
-
-
 function startClassicGame() {
  show(classicFightersDisplay)
  hide(classicGameVersion)
  hide(difficultGameVersion)
  gameOrFighter.innerText = "Choose your fighter!"
 }
-//I think I need to add another id in html for the views to change
-
 
 function startDifficultGame() {
 show(classicFightersDisplay)
@@ -58,7 +51,23 @@ hide(difficultGameVersion)
 gameOrFighter.innerText = "Choose your fighter!"
 }
 
-
+function startGame(event) {
+  game.assignHumanFighter(event.target.value)
+  game.classicGame()
+  fightersInfo.innerHTML = `
+  <p>The Human fighter is ${game.human.fighter}</p>
+  <p>The Computer fighter is ${game.computer.fighter}</p>
+  <p>${game.whoWon}!</p>
+  `
+  humanScore.innerText = game.human.wins
+  computerScore.innerText = game.computer.wins
+  console.log(game.human.fighter)
+  // console.log(game.classicGame())
+  console.log(game.computer.fighter)
+  // console.log(game.computer.wins)
+  // console.log(game.human.wins)
+  console.log(game.whoWon)
+}
 
 
 

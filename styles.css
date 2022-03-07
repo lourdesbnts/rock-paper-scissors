@@ -73,6 +73,7 @@ p {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 75px;
 }
 
 .human-icon,
@@ -94,6 +95,10 @@ p {
 .fighter-icons {
   width: 100px;
   height: 100px;
+}
+
+.difficult-title {
+  margin-bottom: 5px;
 }
 
 .hidden {
