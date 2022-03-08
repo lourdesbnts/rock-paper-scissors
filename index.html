@@ -9,12 +9,12 @@
   <body>
     <section class="container">
       <div class="left-side">
-    <article class="human">
-      <p class="human-icon">👱‍♀️</p>
-      <h2>Human</h2>
-      <p class="score-keeper">Wins:<span id="humanScore">0</span></p>
-      <button class="change-game hidden">Change Game</button>
-    </article>
+      <article class="human">
+        <p class="human-icon">👤</p>
+        <h2>Human</h2>
+        <p class="score-keeper">Wins:<span id="humanScore">0</span></p>
+        <button class="change-game hidden">Change Game</button>
+      </article>
     </div>
     <main>
     <header>
@@ -22,12 +22,12 @@
         <h2 class="game-or-fighter" id="gameOrFighter">Choose your game!</h2>
     </header>
     <section class="box-1" id="classicGameVersion">
-      <h3>💫Classic💫</h3>
+      <h3 class="classic-title">💫Classic💫</h3>
         <section class="classic-rules">
         <p>rock > scissors</p>
         <p>paper > rock</p>
         <p>scissors > paper</p>
-        <input type="button" id="classicGameSelected" value="Start Classic Game">
+        <input type="button" class="classic-game-selected" id="classicGameSelected" value="Start Classic Game">
       </section>
     </section>
     <section class="box-2" id="difficultGameVersion">
@@ -38,37 +38,36 @@
         <p>scissors > paper & lizard</p>
         <p>lizard > paper & alien</p>
         <p>alien > scissors & rock</p>
-        <input type="button" id="difficultGameSelected" value="Start Difficult Game">
+        <input type="button" class="difficult-game-selected" id="difficultGameSelected" value="Start Difficult Game">
       </section>
     </section>
     <section class="classic-fighters-display hidden" id="classicFightersDisplay">
-      <section class="rock-fighter" id="rock" for="rockFighter">
+      <section class="rock-fighter" id="rock">
         <img src="assets/happy-rock.png" alt="rock icon" class="fighter-icons">
       </section>
-      <section class"paper-fighter" id="paper" for="paperFighter">
+      <section class"paper-fighter" id="paper">
         <img src="assets/happy-paper.png" alt="paper icon" class="fighter-icons">
       </section>
-      <section class="scissors-fighter" id="scissors" for="scissorsFighter">
+      <section class="scissors-fighter" id="scissors">
         <img src="assets/happy-scissors.png" alt="scissors icon" class="fighter-icons">
       </section>
-      <section class="alien-fighter" id="alien" for="alienFighter">
+      <section class="alien-fighter" id="alien">
         <img src="assets/happy-alien.png" alt="alien icon" class="fighter-icons">
       </section>
-      <section class="lizard-fighter" id="lizard" for="lizardFighter">
+      <section class="lizard-fighter" id="lizard">
         <img src="assets/happy-lizard.png" alt="lizard icon" class="fighter-icons">
       </section>
         <img class="computer-fighter hidden" src="">
   </section>
-  <section id="fightersInfo">
-
+  <section class= "fighter-info"id="fightersInfo">
   </section>
     </main>
-    <div class="right-side">
-    <article class="computer">
-      <p class="computer-icon">🤖</p>
-      <h2>Computer</h2>
-      <p class="score-keeper">Wins:<span id="computerScore">0</span></p>
-    </article>
+      <div class="right-side">
+        <article class="computer">
+          <p class="computer-icon">🤖</p>
+          <h2>Computer</h2>
+          <p class="score-keeper">Wins:<span id="computerScore">0</span></p>
+        </article>
     </div>
     </section>
   </body>
