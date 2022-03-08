@@ -2,14 +2,12 @@ class Game {
   constructor() {
     this.human = new Player({
       name: 'Human',
-      icon: 'here will be the token',
       fighter: ''
-    })
+    });
     this.computer = new Player({
       name: 'Computer',
-      icon: 'here will be the token',
       fighter: ''
-    })
+    });
     this.whoWon = '';
     this.computerChoiceClassic = this.computer.chooseWeapon();
     this.computerChoiceDifficult = this.computer.chooseDifficultWeapon();
@@ -20,7 +18,7 @@ class Game {
     }
 
   classicGame() {
-    this.computer.fighter = this.computer.chooseWeapon()
+    this.computer.fighter = this.computer.chooseWeapon();
     if (this.human.fighter === this.computer.fighter) {
       this.whoWon = 'It\'s a draw!'
       return this.whoWon;
@@ -43,7 +41,6 @@ class Game {
     if (this.human.fighter === 'paper' && this.computer.fighter === 'scissors') {
       this.whoWon = `${this.computer.name} won!`
       this.computer.scoreKeeper();
-      console.log(this.whoWon)
       return this.whoWon;
     }
     if (this.human.fighter === 'scissor' && this.computer.fighter === 'paper') {
@@ -59,7 +56,6 @@ class Game {
   }
 
   difficultGame() {
-    console.log(this.human.fighter)
     if (this.human.fighter === this.computerChoiceDifficult) {
       this.whoWon = 'It\'s a Draw!'
       return this.whoWon;
@@ -76,7 +72,7 @@ class Game {
     }
     if (this.human.fighter === 'paper' && (this.computerChoiceDifficult === 'scissors' || this.computerChoiceDifficult === 'lizard')) {
       this.whoWon = `${this.computer.name} won!`
-      this.computer.scoreKeeper()
+      this.computer.scoreKeeper();
       return this.whoWon;
     }
     if (this.human.fighter === 'paper' && (this.computerChoiceDifficult === 'alien' || this.computerChoiceDifficult === 'rock')) {

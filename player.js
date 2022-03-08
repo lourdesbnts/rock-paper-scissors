@@ -14,14 +14,13 @@ class Player {
 
   chooseWeapon() {
     var randomIndex = Math.floor(Math.random() * this.classicFighters.length);
-    this.fighter = this.classicFighters[randomIndex]
-    return this.fighter
-    // console.log(this.classicFighters[randomIndex])
+    this.fighter = this.classicFighters[randomIndex];
+    return this.fighter;
   }
+
   chooseDifficultWeapon() {
     var randomIndex = Math.floor(Math.random() * this.difficultFighters.length);
-    this.fighter = this.difficultFighters[randomIndex]
-    return this.fighter
-    console.log(this.difficultFighters[randomIndex])
+    this.fighter = this.difficultFighters[randomIndex];
+    return this.fighter;
   }
 }

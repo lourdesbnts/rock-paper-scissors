@@ -19,131 +19,127 @@ var changeGameButton = document.querySelector('.change-game');
 
 var game = new Game();
 var gameType;
-// Event Listeners go here:
-window.addEventListener('load', scores)
+
+// Event Listeners
+
 classicGameChoice.addEventListener('click', startClassicGame);
 difficultGameChoice.addEventListener('click', startDifficultGame);
 classicFightersDisplay.addEventListener('click', startDifficultChoice);
 changeGameButton.addEventListener('click', showMenu);
 
+//Functions
 
 function show(element) {
   element.classList.remove('hidden');
 }
 
 function hide(element) {
-  element.classList.add('hidden')
+  element.classList.add('hidden');
 }
 
 function resetClassic() {
   fightersInfo.innerHTML = ''
-  show(rock)
-  show(paper)
-  show(scissors)
-  hide(computerFighter)
+  show(rock);
+  show(paper);
+  show(scissors);
+  hide(computerFighter);
   gameOrFighter.innerText = "Choose your fighter!"
 }
 
 function resetDifficult() {
   fightersInfo.innerHTML = ''
-  show(rock)
-  show(paper)
-  show(scissors)
-  show(alien)
-  show(lizard)
+  show(rock);
+  show(paper);
+  show(scissors);
+  show(alien);
+  show(lizard);
   hide(computerFighter)
   gameOrFighter.innerText = "Choose your fighter!"
 }
 
 function showMenu() {
-  show(classicGameVersion)
-  show(difficultGameVersion)
-  hide(classicFightersDisplay)
-  hide(changeGameButton)
+  show(classicGameVersion);
+  show(difficultGameVersion);
+  hide(classicFightersDisplay);
+  hide(changeGameButton);
   gameOrFighter.innerText = "Choose your game!"
 }
 
 function startClassicGame() {
   gameType = 'classic'
- show(classicFightersDisplay)
- hide(classicGameVersion)
- hide(difficultGameVersion)
- hide(alien)
- hide(lizard)
- show(changeGameButton)
- gameOrFighter.innerText = "Choose your fighter!"
+  show(classicFightersDisplay);
+  hide(classicGameVersion);
+  hide(difficultGameVersion);
+  hide(alien);
+  hide(lizard);
+  show(changeGameButton);
+  gameOrFighter.innerText = "Choose your fighter!"
 }
 
 function startDifficultGame() {
   gameType = 'difficult'
-show(classicFightersDisplay)
-hide(classicGameVersion)
-hide(difficultGameVersion)
-show(alien)
-show(lizard)
-show(changeGameButton)
-gameOrFighter.innerText = "Choose your fighter!"
+  show(classicFightersDisplay);
+  hide(classicGameVersion);
+  hide(difficultGameVersion);
+  show(alien);
+  show(lizard);
+  show(changeGameButton);
+  gameOrFighter.innerText = "Choose your fighter!"
 }
 
 function startClassicChoice(event) {
-  game.assignHumanFighter(event.target.parentNode.id)
-  game.classicGame()
-  showSelectedCharacters(event.target.parentNode.id, 'classic')
-  showComputerFighter()
+  game.assignHumanFighter(event.target.parentNode.id);
+  game.classicGame();
+  showSelectedCharacters(event.target.parentNode.id, 'classic');
+  showComputerFighter();
   fightersInfo.innerHTML = `
-  <p>The Human fighter is ${game.human.fighter}</p>
-  <p>The Computer fighter is ${game.computer.fighter}</p>`
+  <p>Human choose:${game.human.fighter}</p>
+  <p>Computer choose:${game.computer.fighter}</p>`
   gameOrFighter.innerText = game.whoWon
   humanScore.innerText = game.human.wins
   computerScore.innerText = game.computer.wins
-  setTimeout(resetClassic, 2000)
+  setTimeout(resetClassic, 2000);
 }
 
 function startDifficultChoice(event) {
-  // hide(difficultFightersDisplay)
   game.assignHumanFighter(event.target.parentNode.id)
   if (gameType === 'classic') {
-    game.classicGame()
+    game.classicGame();
   }
     else {
-      game.difficultGame()
+    game.difficultGame();
   }
   showSelectedCharacters(event.target.parentNode.id, gameType)
-  showComputerFighter()
+  showComputerFighter();
   fightersInfo.innerHTML = `
-  <p>The Human fighter is ${game.human.fighter}</p>
-  <p>The Computer fighter is ${game.computer.fighter}</p>`
+  <p>Human choose: ${game.human.fighter}</p>
+  <p>Computer choose: ${game.computer.fighter}</p>`
   gameOrFighter.innerText = game.whoWon
   humanScore.innerText = game.human.wins
   computerScore.innerText = game.computer.wins
     if (gameType === 'classic') {
-      setTimeout(resetClassic, 2000)
-    }
+      setTimeout(resetClassic, 4000);
+  }
       else {
-    setTimeout(resetDifficult, 2000)
-    }
+    setTimeout(resetDifficult, 4000);
+  }
 }
 
 function showSelectedCharacters(playerSelection, gameType) {
   if(gameType === 'classic') {
-  var icons = [rock, paper, scissors]
+    var icons = [rock, paper, scissors]
   }
   else {
     var icons = [rock, paper, scissors, lizard, alien]
   }
   for (var i = 0; i < icons.length; i++) {
-    console.log(icons[i].id)
     if (icons[i].id !== playerSelection) {
-      hide(icons[i])
+      hide(icons[i]);
     }
   }
 }
 
 function showComputerFighter() {
-  show(computerFighter)
+  show(computerFighter);
   computerFighter.src = `assets/happy-${game.computer.fighter}.png`
-}
-
-function scores() {
-
 }
