@@ -3,7 +3,7 @@ class Game {
     this.human = new Player({
       name: 'Human',
       icon: 'here will be the token',
-      fighter: 'paper'
+      fighter: ''
     })
     this.computer = new Player({
       name: 'Computer',
@@ -20,9 +20,7 @@ class Game {
     }
 
   classicGame() {
-    // console.log(this.computerChoiceClassic)
     this.computer.fighter = this.computer.chooseWeapon()
-    // console.log(this.computer.fighter)
     if (this.human.fighter === this.computer.fighter) {
       this.whoWon = 'It\'s a draw!'
       return this.whoWon;

@@ -92,6 +92,29 @@ p {
   margin-top: 60px;
 }
 
+.classic-fighters-display {
+  display: flex;
+  justify-content: center;
+  height: 150px;
+  width: 100%;
+}
+
+.difficult-fighters-display {
+  display: flex;
+  justify-content: center;
+}
+
+.paper-fighter,
+.rock-fighter,
+.scissors-fighter,
+.lizard-fighter,
+.alien-fighter,
+.computer-fighter {
+  height: 110px;
+  width: 110px;
+  margin: 0;
+}
+
 .fighter-icons {
   width: 100px;
   height: 100px;

@@ -25,14 +25,3 @@ class Player {
     console.log(this.difficultFighters[randomIndex])
   }
 }
-
-
-// resetGame() {
-  //should clear game just played
-  //should show new icons for player to select new fighter
-// }
-
-
-
-//after win the game resets
-//need timer for reset
