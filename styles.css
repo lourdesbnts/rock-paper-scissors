@@ -1,4 +1,3 @@
-
 h1 {
   font-size: 50px;
 }
@@ -30,6 +29,14 @@ p {
   margin: 5px;
 }
 
+input {
+font-family: 'Ubuntu Mono', monospace;
+padding: 3px;
+border-radius: 10px;
+background-color: #9B9ECE;
+color: #FFFFFF ;
+}
+
 .container {
   display: flex;
 }
@@ -41,29 +48,32 @@ p {
 }
 
 .box-1 {
-  display: flex;
   font-size: 18px;
-  justify-content: center;
-  flex-direction: column;
   align-items: center;
-  height: 200px;
-  width: 200px;
+  height: 30vh;
+  width: 30vw;
   background-color: rgba(225, 225, 225, .9);
   opacity: 1.0;
   margin-top: 40px;
 }
 
 .box-2 {
-  display: flex;
   font-size: 18px;
-  justify-content: center;
-  flex-direction: column;
   align-items: center;
-  height: 200px;
-  width: 200px;
+  height: 30vh;
+  width: 30vw;
   background-color: rgba(225, 225, 225, .9);
   opacity: 1.0;
   margin-top: 40px;
+}
+
+.change-game {
+font-family: 'Ubuntu Mono', monospace;
+margin: 20px;
+padding: 3px;
+border-radius: 10px;
+background-color: #9B9ECE;
+color: #FFFFFF
 }
 
 .classic-game {
@@ -71,12 +81,13 @@ p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
 }
+
 .difficult-game {
   margin-top: 15px;
 }
 
+.classic-rules,
 .difficult-rules {
   display: flex;
   flex-direction: column;
@@ -85,20 +96,25 @@ p {
   margin-bottom: 75px;
 }
 
+.difficult-rules {
+  margin-top: -12px;
+}
+
 .human-icon,
 .computer-icon {
   display: flex;
   justify-content: center;
-}
-
-.score-keeper {
-  display: flex;
-  justify-content: center;
+  font-size: 50px;
 }
 
 .human,
 .computer {
   margin-top: 60px;
+}
+
+.score-keeper {
+  display: flex;
+  justify-content: center;
 }
 
 .classic-fighters-display {
@@ -130,7 +146,18 @@ p {
 }
 
 .difficult-title {
-  margin-bottom: 5px;
+  margin-bottom: 15px;
+  color: #9B9ECE;
+}
+
+.classic-title {
+  color: #9B9ECE;
+}
+
+.fighter-info {
+  display: flex;
+  flex-direction: row;
+  color: #F24C00;
 }
 
 .hidden {
