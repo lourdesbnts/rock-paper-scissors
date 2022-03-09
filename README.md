@@ -20,7 +20,7 @@ Bored and need time to burn some time? Play my Rock, Paper, Scissors game agains
 
 ## Illustrations
 
-![Rock Paper Scisscors gif](https://media.giphy.com/media/57nVmbyoPugGxTj21Q/giphy.gif)
+![Rock Paper Scisscors gif](https://media.giphy.com/media/lOI6knmUttEfgmQYMx/giphy.gif)
 ![Rock Paper Scisscors 2 gif](https://media.giphy.com/media/57nVmbyoPugGxTj21Q/giphy.gif)
 
 ## Set Up
